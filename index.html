@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DMCA - Picha Entertainment</title>
+
+  <!-- ✅ Mobile responsiveness fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background: #0b0b0b;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Header */
+    .header {
+      background: #000;
+      padding: 15px 20px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .header span {
+      color: #e50914;
+      cursor: pointer;
+    }
+
+    /* Container */
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Typography */
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    ul {
+      color: #ccc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* Divider */
+    hr {
+      border: 0;
+      height: 1px;
+      background: #222;
+      margin: 20px 0;
+    }
+
+    /* Form */
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin-bottom: 12px;
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      background: #111;
+      color: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    /* Checkbox labels */
+    label {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    input[type="checkbox"] {
+      margin-top: 4px;
+    }
+
+    /* Button */
+    button {
+      background: #e50914;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #ff1f1f;
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      input, textarea {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <span onclick="location.href='https://picha.pages.dev'">
+      PichaEntertainment
+    </span>
+  </div>
+
+  <hr>
+
+  <!-- Content -->
+  <div class="container">
+
+    <h1>Digital Millennium Copyright Act (DMCA)</h1>
+
+    <p>
+      We take claims of copyright infringement seriously and respond to valid notices in accordance with applicable laws.
+    </p>
+
+    <p>
+      If you believe that any content available on Picha Entertainment infringes your copyright, you may submit a notification below.
+    </p>
+
+    <hr>
+
+    <h2>Filing a DMCA Notice</h2>
+
+    <p>Please include the following information:</p>
+
+    <ul>
+      <li>Identification of the copyrighted work</li>
+      <li>Exact URL of the infringing material</li>
+      <li>Your contact information (name, email)</li>
+      <li>A statement of good faith belief</li>
+      <li>A statement of accuracy under penalty of perjury</li>
+      <li>Your full legal name (as signature)</li>
+    </ul>
+
+    <hr>
+
+    <h2>Submit a DMCA Request</h2>
+
+    <form action="https://formspree.io/f/mbddanjz" method="POST">
+
+      <input type="hidden" name="_subject" value="DMCA Request - Picha Entertainment">
+
+      <!-- Contact Info -->
+      <input type="text" name="name" placeholder="Full Legal Name (Signature)" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+
+      <!-- DMCA Details -->
+      <input type="text" name="content_url" placeholder="URL of Infringing Content" required>
+
+      <textarea name="copyright_work" rows="3" placeholder="Identify the copyrighted work" required></textarea>
+
+      <textarea name="message" rows="4" placeholder="Explain your claim in detail..." required></textarea>
+
+      <!-- Legal Statements -->
+      <label>
+        <input type="checkbox" required>
+        I have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law.
+      </label>
+
+      <label>
+        <input type="checkbox" required>
+        I confirm that the information in this notice is accurate and, under penalty of perjury, I am authorized to act on behalf of the owner.
+      </label>
+
+      <button type="submit">Submit DMCA Notice</button>
+
+    </form>
+
+    <!-- Fallback -->
+    <p style="color:#888; font-size:14px; margin-top:15px;">
+      To include supporting documents, please send attachments separately to:
+      <b>kerosoftz522@gmail.com</b> and reference your submission email.
+    </p>
+
+  </div>
+
+</body>
+</html>
